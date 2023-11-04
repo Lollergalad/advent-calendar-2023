@@ -205,3 +205,45 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .container {
+    .description {
+      margin: 2.5rem 2rem;
+    }
+
+    .logoAndTimerContainer {
+      .imageContainer {
+        img {
+          width: 25rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .container {
+    .description {
+      margin: 2.5rem 1rem;
+    }
+
+    .logoAndTimerContainer {
+      .imageContainer {
+        img {
+          width: 22.5rem;
+        }
+      }
+
+      .timerContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        div {
+          width: 3rem;
+          height: 4rem;
+        }
+      }
+    }
+  }
+}
