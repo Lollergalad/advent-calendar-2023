@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import Snowfall from "react-snowfall";
 
 import IMAGES from "images/Images";
 
@@ -36,6 +37,7 @@ const Counter = () => {
 
   return (
     <div className={classes.container}>
+      <Snowfall />
       <div className={classes.description}>
         <span className={classes.title}>Advent Calendar 2023</span>
         <span className={classes.info}>

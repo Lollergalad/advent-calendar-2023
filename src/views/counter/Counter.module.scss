@@ -200,7 +200,6 @@
 
     .logoAndTimerContainer {
       align-items: center;
-      padding-bottom: 5rem;
       gap: 2.5rem;
     }
   }
@@ -249,5 +248,23 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 451px) {
+  .container {
+    min-height: 69rem;
+  }
+}
+
+@media (max-width: 413px) {
+  .container {
+    min-height: 72.5rem;
+  }
+}
+
+@media (max-width: 413px) {
+  .container {
+    min-height: 75rem;
   }
 }
