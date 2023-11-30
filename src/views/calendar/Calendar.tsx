@@ -2,7 +2,7 @@ import { FC, useState } from "react";
 import Snowfall from "react-snowfall";
 import classNames from "classnames";
 
-import { DAY_ICONS } from "images/Images";
+import { DAY_ICONS } from "assets/Images";
 
 import classes from "./Calendar.module.scss";
 

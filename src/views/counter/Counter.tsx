@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Snowfall from "react-snowfall";
 
-import { IMAGES } from "images/Images";
+import { IMAGES } from "assets/Images";
 
 import classes from "./Counter.module.scss";
 
