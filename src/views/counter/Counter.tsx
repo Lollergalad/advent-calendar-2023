@@ -1,40 +1,22 @@
-import { useEffect, useMemo, useState } from "react";
+import { FC } from "react";
 import Snowfall from "react-snowfall";
 
-import IMAGES from "images/Images";
+import { IMAGES } from "images/Images";
 
 import classes from "./Counter.module.scss";
 
-const CALENDAR_OPEN_DAY = new Date(2023, 11, 1);
-
-interface TimeForCalendar {
-  [index: string]: number;
+type TimeType = {
   days: number;
   hours: number;
   minutes: number;
   seconds: number;
+};
+
+interface CounterProps {
+  timeLeftUntilCalendarOpens: TimeType;
 }
 
-const Counter = () => {
-  const [currentDate, setCurrentDate] = useState(new Date());
-
-  useEffect(() => {
-    const intervalId = setInterval(() => setCurrentDate(new Date()), 1000);
-
-    return () => clearInterval(intervalId);
-  }, []);
-
-  const timeLeftUntilCalendarOpens: TimeForCalendar = useMemo(() => {
-    const remainderTime = Math.abs(CALENDAR_OPEN_DAY.getTime() - currentDate.getTime());
-    const totalSeconds = Math.floor(remainderTime / 1000);
-    const days = Math.floor(totalSeconds / 60 / (24 * 60));
-    const hours = Math.floor((totalSeconds / 60 - days * 24 * 60) / 60);
-    const minutes = Math.floor(totalSeconds / 60 - days * 24 * 60 - hours * 60);
-    const seconds = totalSeconds - days * 24 * 60 * 60 - hours * 60 * 60 - minutes * 60;
-
-    return { days, hours, minutes, seconds };
-  }, [currentDate]);
-
+const Counter: FC<CounterProps> = ({ timeLeftUntilCalendarOpens }) => {
   return (
     <div className={classes.container}>
       <Snowfall />
@@ -54,7 +36,7 @@ const Counter = () => {
         <div className={classes.timerContainer}>
           {Object.keys(timeLeftUntilCalendarOpens).map(key => (
             <div key={key}>
-              <span>{timeLeftUntilCalendarOpens[key]}</span>
+              <span>{timeLeftUntilCalendarOpens[key as keyof TimeType]}</span>
               <span>{key}</span>
             </div>
           ))}

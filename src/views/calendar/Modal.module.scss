@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap");
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  background-color: #0000004f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    .tilt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 20rem;
+      width: 35rem;
+      background-color: black;
+      background: rgba(63, 65, 60, 0.9);
+      background-color: rgb(228 229 226 / 68%);
+      background-color: rgb(255 255 255 / 90%);
+      //background: rgba(3, 31, 39, 0.83);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(8.6px);
+      -webkit-backdrop-filter: blur(8.6px);
+      border: 1px solid rgba(63, 65, 60, 0.24);
+      $accentColor: #9f153a;
+      border: 1rem solid $accentColor;
+      border-image: repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 5px,
+          $accentColor 6px,
+          $accentColor 15px,
+          transparent 16px,
+          transparent 20px
+        )
+        20/1rem;
+      overflow: hidden;
+
+      div {
+        text-align: center;
+        color: black;
+        font-family: "Caveat", cursive;
+        font-weight: 700;
+        font-size: clamp(1.25rem, 7.5vw, 2.25rem);
+        rotate: 5deg;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    .box {
+      .tilt {
+        height: 20rem;
+        width: 32.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    .box {
+      .tilt {
+        height: 17.5rem;
+        width: 27.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 525px) {
+  .container {
+    .box {
+      .tilt {
+        height: 16.5rem;
+        width: 23.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 465px) {
+  .container {
+    .box {
+      .tilt {
+        height: 15rem;
+        width: 22.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    .box {
+      .tilt {
+        height: 12.5rem;
+        width: 20rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .container {
+    .box {
+      .tilt {
+        height: 11.5rem;
+        width: 18rem;
+      }
+    }
+  }
+}
