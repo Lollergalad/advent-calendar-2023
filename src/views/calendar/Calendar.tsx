@@ -146,11 +146,13 @@ const Calendar: FC<CounterProps> = ({
             <div key={day} className={classes.box}>
               <div
                 className={classNames(classes.day, {
-                  [classes["day--disabled"]]: day > timeLeftUntilCalendarOpens.days,
+                  [classes["day--disabled"]]: day > timeLeftUntilCalendarOpens.days + 1,
                 })}
-                onClick={() => (day > timeLeftUntilCalendarOpens.days ? null : handleClick(day))}>
+                onClick={() =>
+                  day > timeLeftUntilCalendarOpens.days + 1 ? null : handleClick(day)
+                }>
                 <img src={img} alt={day.toString()} />
-                {day > timeLeftUntilCalendarOpens.days ? (
+                {day > timeLeftUntilCalendarOpens.days + 1 ? (
                   <img className={classes.dis} src={DAY_ICONS.icy} alt={day.toString()} />
                 ) : null}
               </div>
