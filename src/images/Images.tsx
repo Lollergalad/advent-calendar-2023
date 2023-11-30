@@ -1,10 +1,6 @@
 const baseURL = import.meta.url;
 
-interface ImageInterface {
-  [key: string]: string;
-}
-
-const DAY_ICONS: ImageInterface = {
+const DAY_ICONS = {
   day1: new URL("./day-1.png", baseURL).href,
   day2: new URL("./day-2.png", baseURL).href,
   day3: new URL("./day-3.png", baseURL).href,
