@@ -30,7 +30,7 @@ const createArrayDays = () => {
   const days: Array<DayType> = Array.from({ length: 24 }, (_, i) => {
     const day = i + 1;
     const picture = `day${day.toString()}`;
-    const img: string = DAY_ICONS[picture];
+    const img = DAY_ICONS[picture as string];
 
     return {
       day,
