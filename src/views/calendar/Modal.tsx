@@ -92,16 +92,60 @@ const Modal: FC<ModalProps> = ({ day, setIsModalOpen }) => {
         );
         break;
       case 9:
+        quote = (
+          <>
+            <div>Kicsi szívem, kicsi szám,</div>
+            <div>Édesed puszikát, csókot kíván!</div>
+          </>
+        );
         break;
       case 10:
+        quote = (
+          <>
+            <div>Mosolyod ha látom, azt hiszem csak egy álom,</div>
+            <div>szemed ha látom olyan mint egy vágy, várom.</div>
+          </>
+        );
         break;
       case 11:
+        quote = (
+          <>
+            <div>Ha te vagy a kenyér,</div>
+            <div>én leszek melléd a bor,</div>
+            <div>majd rajtad az ízem</div>
+            <div>oly könnyedén áthatol.</div>
+          </>
+        );
         break;
       case 12:
+        quote = (
+          <>
+            <div>Az élet szép, és oly csodás,</div>
+            <div>megtalálni, kire vársz.</div>
+            <div>Erdőben sétálva, hegyre mászva,</div>
+            <div>virágos réten, kicsit elmélázva!</div>
+          </>
+        );
         break;
       case 13:
+        quote = (
+          <>
+            <div>Akármerre járjak, keljek,</div>
+            <div>mégis hozzád térek vissza.</div>
+            <div>A te édes, hű szerelmed,</div>
+            <div>az én igaz pihenőm.</div>
+          </>
+        );
         break;
       case 14:
+        quote = (
+          <>
+            <div>Amíg nem porlad szét a szirt,</div>
+            <div>s zúgnak a tengerek: </div>
+            <div>szeretlek én,</div>
+            <div>míg életem homokja elpereg.</div>
+          </>
+        );
         break;
       case 15:
         break;
