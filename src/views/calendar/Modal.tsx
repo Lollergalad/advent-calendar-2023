@@ -83,6 +83,13 @@ const Modal: FC<ModalProps> = ({ day, setIsModalOpen }) => {
         );
         break;
       case 8:
+        quote = (
+          <>
+            <div>Édes kis egyetlenem,</div>
+            <div>te vagy a világ nekem,</div>
+            <div>egyetlen kis szerelmem!</div>
+          </>
+        );
         break;
       case 9:
         break;
