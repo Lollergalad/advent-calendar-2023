@@ -148,24 +148,83 @@ const Modal: FC<ModalProps> = ({ day, setIsModalOpen }) => {
         );
         break;
       case 15:
+        quote = (
+          <>
+            <div>Szerelem az, ha </div>
+            <div>ébredned is jó azzal,</div>
+            <div>akivel alszol.</div>
+          </>
+        );
         break;
       case 16:
+        quote = (
+          <>
+            <div>Te vagy bűvöskockám közepe,</div>
+            <div>körötted forog minden porcikám.</div>
+          </>
+        );
         break;
       case 17:
+        quote = (
+          <>
+            <div>Ha szeretsz,</div>
+            <div>többet látsz a világból,</div>
+            <div>s minél többet látsz,</div>
+            <div>annál jobban szeretsz.</div>
+          </>
+        );
         break;
       case 18:
+        quote = (
+          <>
+            <div>Bármit megtennék a csókodért.</div>
+            <div>Minden hegyet megmásznék,</div>
+            <div>minden folyón átúsznék,</div>
+            <div>minden sivatagon átkelnék.</div>
+          </>
+        );
         break;
       case 19:
+        quote = (
+          <>
+            <div></div>
+          </>
+        );
         break;
       case 20:
+        quote = (
+          <>
+            <div></div>
+          </>
+        );
         break;
       case 21:
+        quote = (
+          <>
+            <div></div>
+          </>
+        );
         break;
       case 22:
+        quote = (
+          <>
+            <div></div>
+          </>
+        );
         break;
       case 23:
+        quote = (
+          <>
+            <div></div>
+          </>
+        );
         break;
       case 24:
+        quote = (
+          <>
+            <div></div>
+          </>
+        );
         break;
 
       default:
