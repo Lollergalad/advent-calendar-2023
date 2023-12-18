@@ -187,7 +187,10 @@ const Modal: FC<ModalProps> = ({ day, setIsModalOpen }) => {
       case 19:
         quote = (
           <>
-            <div></div>
+            <div>Kicsikém,</div>
+            <div>egyetlen kis csibém,</div>
+            <div>drága mindenem,</div>
+            <div>hatalmas szerelmem!</div>
           </>
         );
         break;
