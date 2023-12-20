@@ -197,35 +197,47 @@ const Modal: FC<ModalProps> = ({ day, setIsModalOpen }) => {
       case 20:
         quote = (
           <>
-            <div></div>
+            <div>Csókot kérek,</div>
+            <div>de csókot azonnal,</div>
+            <div>ha nem sietsz adni,</div>
+            <div>könnyeimet fogom falni.</div>
           </>
         );
         break;
       case 21:
         quote = (
           <>
-            <div></div>
+            <div>Talán a nap?</div>
+            <div>Talán a hold?</div>
+            <div>Akár a csillagok?</div>
+            <div>A te fényed erősebben ragyog!</div>
           </>
         );
         break;
       case 22:
         quote = (
           <>
-            <div></div>
+            <div>Bőröd, ajkad, lélekzésed boldog íz:</div>
+            <div>életemnek fűszersója csak te vagy.</div>
           </>
         );
         break;
       case 23:
         quote = (
           <>
-            <div></div>
+            <div>Hajszálanként szeretlek,</div>
+            <div>méltóképpen a mindenséghez:</div>
+            <div>mindenestől, Egyetlenem!</div>
           </>
         );
         break;
       case 24:
         quote = (
           <>
-            <div></div>
+            <div>Utolsó nap,</div>
+            <div>búcsúzik a kalendár,</div>
+            <div>de ne aggódj,</div>
+            <div>jövőre újra vár!</div>
           </>
         );
         break;
